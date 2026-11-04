@@ -1,0 +1,219 @@
+{
+  "note": "ケースCの全文に基づく期待結果を前編から保持。LLM実測ではない。",
+  "gold": {
+    "C_full_document": [
+      {
+        "transaction_id": "PO-202604-004",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-004に対応するAPR-004の承認確定記録が存在し、評価基準時点まで取消・失効がない。承認者の権限はC2で別に評価する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L04",
+                "lines": [
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A04",
+                "lines": [
+                  2,
+                  3,
+                  7,
+                  10
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "条件充足",
+            "reason": "税抜1,500,000円は通常本部長承認を要する区分だが、本件は設備部の承認済み設備更新予算に対応し、正式委任DLG-2026-04-017による部長承認の例外条件をすべて満たす。委任者EMP-001は発行時点で本部長、受任者EMP-002は承認時点で部長として在任。規程と委任の双方が承認時点で有効で、委任は事前発行、取消・停止なし。1,500,000円は規程・委任書双方の上限2,000,000円以内で、部門・予算ID・明細・品目・税抜額が一致し、予算承認も事前に完了している。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-P02",
+                "lines": [
+                  3,
+                  5,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25
+                ]
+              },
+              {
+                "evidence_id": "E-O04",
+                "lines": [
+                  2,
+                  3,
+                  5,
+                  8,
+                  9
+                ]
+              },
+              {
+                "evidence_id": "E-A04",
+                "lines": [
+                  3,
+                  6,
+                  8,
+                  9
+                ]
+              },
+              {
+                "evidence_id": "E-D04",
+                "lines": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              },
+              {
+                "evidence_id": "E-B04",
+                "lines": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  3,
+                  4,
+                  6
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "check": "規程の適用期間",
+                "actual": "2026-04-22T09:00:00+09:00",
+                "start_inclusive": "2026-04-01T00:00:00+09:00",
+                "end_exclusive": "2026-05-01T00:00:00+09:00",
+                "result": true
+              },
+              {
+                "check": "対象部門",
+                "actual": "設備部",
+                "required": "設備部",
+                "result": true
+              },
+              {
+                "check": "設備更新予算の対応",
+                "actual_budget_id": "EQ-2026-04-02",
+                "actual_detail": "03",
+                "actual_item": "冷却循環ポンプ更新装置",
+                "actual_pretax_amount_jpy": 1500000,
+                "result": true
+              },
+              {
+                "check": "委任書の事前発行",
+                "issued_at": "2026-04-14T10:00:00+09:00",
+                "approved_at": "2026-04-22T09:00:00+09:00",
+                "result": true
+              },
+              {
+                "check": "委任期間",
+                "actual": "2026-04-22T09:00:00+09:00",
+                "start_inclusive": "2026-04-15T00:00:00+09:00",
+                "end_exclusive": "2026-04-26T00:00:00+09:00",
+                "result": true
+              },
+              {
+                "check": "規程・委任書双方の金額上限",
+                "amount_jpy": 1500000,
+                "policy_cap_jpy": 2000000,
+                "delegation_cap_jpy": 2000000,
+                "operator": "<=",
+                "result": true
+              },
+              {
+                "check": "予算承認の先行",
+                "budget_approved_at": "2026-04-13T14:00:00+09:00",
+                "transaction_approved_at": "2026-04-22T09:00:00+09:00",
+                "result": true
+              },
+              {
+                "check": "在任名簿との一致",
+                "delegator": "EMP-001 本部長",
+                "delegate": "EMP-002 部長",
+                "tenure_start_inclusive": "2026-04-01T00:00:00+09:00",
+                "tenure_end_exclusive": "2026-05-01T00:00:00+09:00",
+                "result": true
+              }
+            ]
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件充足",
+            "reason": "記録上の承認確定は2026年4月22日09:00 JST、発注確定は同日10:00 JSTであり、承認が1時間前である。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-A04",
+                "lines": [
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-O04",
+                "lines": [
+                  6
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-22T09:00:00+09:00",
+              "ordered_at": "2026-04-22T10:00:00+09:00",
+              "operator": "<",
+              "result": true
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認履歴の対象取引IDはPO-202604-004、版は1、税抜額は1,500,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O04",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A04",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

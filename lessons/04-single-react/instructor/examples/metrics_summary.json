@@ -1,0 +1,144 @@
+{
+  "unit": "Unicode code points, not tokens",
+  "runs": [
+    {
+      "category": "model_selected",
+      "scenario": "C_deferred",
+      "source_run": "runs/model_deferred",
+      "steps": 5,
+      "action_counts": {
+        "search": 1,
+        "read": 2,
+        "compare": 1,
+        "finish": 1
+      },
+      "observation_counts": {
+        "ok": 5
+      },
+      "session_status": "finished",
+      "reported_condition_statuses": {
+        "C1": "条件充足",
+        "C2": "条件充足",
+        "C3": "条件充足",
+        "C4": "条件充足"
+      },
+      "initial_prompt_characters": 5768,
+      "final_prompt_characters": 18572,
+      "initial_prompt_sha256": "b6f9ea2a0d44888383943cea0a96223323d611a61fee963b43b973b9c4711b55",
+      "final_prompt_sha256": "da1cab1b260f4f90da03e489d8f234d722d7d63c1a67e2227c139185246d195f",
+      "trace_sha256": "c344b828805d14b7561c5de125fa8c40651dadc8e24ca92971940f45bcda572f"
+    },
+    {
+      "category": "model_selected",
+      "scenario": "C_unavailable",
+      "source_run": "runs/model_unavailable",
+      "steps": 6,
+      "action_counts": {
+        "search": 2,
+        "read": 2,
+        "compare": 1,
+        "finish": 1
+      },
+      "observation_counts": {
+        "ok": 5,
+        "error": 1
+      },
+      "session_status": "finished",
+      "reported_condition_statuses": {
+        "C1": "条件充足",
+        "C2": "判定保留",
+        "C3": "条件充足",
+        "C4": "条件充足"
+      },
+      "initial_prompt_characters": 5768,
+      "final_prompt_characters": 18081,
+      "initial_prompt_sha256": "b6f9ea2a0d44888383943cea0a96223323d611a61fee963b43b973b9c4711b55",
+      "final_prompt_sha256": "75b716afb97cdb7d4172ea6889a8566b786c8701a2f32ff8862c4affdc540be9",
+      "trace_sha256": "721869eeabc18d7d95e0902619b170f689c05df78e3bf5d500df9bf1babc4676"
+    },
+    {
+      "category": "scripted",
+      "scenario": "C_same",
+      "source_run": "runs/verified_C_same",
+      "steps": 4,
+      "action_counts": {
+        "search": 1,
+        "read": 1,
+        "compare": 1,
+        "finish": 1
+      },
+      "observation_counts": {
+        "ok": 4
+      },
+      "session_status": "finished",
+      "reported_condition_statuses": {
+        "C1": "条件充足",
+        "C2": "条件充足",
+        "C3": "条件充足",
+        "C4": "条件充足"
+      },
+      "initial_prompt_characters": 6211,
+      "final_prompt_characters": 14502,
+      "initial_prompt_sha256": "67b44bc8f38983f132ab6383fcb7f0ab97af1a9d88669dda140e61c8e805b809",
+      "final_prompt_sha256": "e55a7c7823f24e5c8138f2c17a279916fc06f9f6653d83b31c255a0f1a2631ee",
+      "trace_sha256": "8e3e50566479cec47f2487d492a68a2b49e12233ed3df9a7dff7c20b65c30791"
+    },
+    {
+      "category": "scripted",
+      "scenario": "C_deferred",
+      "source_run": "runs/verified_C_deferred",
+      "steps": 7,
+      "action_counts": {
+        "search": 2,
+        "read": 2,
+        "compare": 2,
+        "finish": 1
+      },
+      "observation_counts": {
+        "ok": 7
+      },
+      "session_status": "finished",
+      "reported_condition_statuses": {
+        "C1": "条件充足",
+        "C2": "条件充足",
+        "C3": "条件充足",
+        "C4": "条件充足"
+      },
+      "initial_prompt_characters": 5768,
+      "final_prompt_characters": 17705,
+      "initial_prompt_sha256": "b6f9ea2a0d44888383943cea0a96223323d611a61fee963b43b973b9c4711b55",
+      "final_prompt_sha256": "4e2627392b3caa1f4cfacfb2df543debb6abcde85f504b42d15869e5848a6304",
+      "trace_sha256": "dd710eb2ffa99cc88df69276935bebaf241b4d1df1a125eec6d701e6e66ddc80"
+    },
+    {
+      "category": "scripted",
+      "scenario": "C_unavailable",
+      "source_run": "runs/verified_C_unavailable",
+      "steps": 6,
+      "action_counts": {
+        "search": 2,
+        "read": 2,
+        "compare": 1,
+        "finish": 1
+      },
+      "observation_counts": {
+        "ok": 5,
+        "error": 1
+      },
+      "session_status": "finished",
+      "reported_condition_statuses": {
+        "C1": "条件充足",
+        "C2": "判定保留",
+        "C3": "条件充足",
+        "C4": "条件充足"
+      },
+      "initial_prompt_characters": 5768,
+      "final_prompt_characters": 13766,
+      "initial_prompt_sha256": "b6f9ea2a0d44888383943cea0a96223323d611a61fee963b43b973b9c4711b55",
+      "final_prompt_sha256": "5dba4910f7718847ab73608ebe1162d5ebe8227a1c2f85c48b94385dcb8300e2",
+      "trace_sha256": "ec877504397f75d0afa28ac3c5c6d79993d967a99c63e9d01e4c4f77cf1c78e8"
+    }
+  ],
+  "model_trial_initial_inputs_byte_identical": true,
+  "note": "入力文字数は再構成した初期/最終の全履歴prompt。実モデルへ送った各要求の長さ・トークン数・処理時間ではない。モデル条件は各1回、脚本条件は事前記述例。"
+}

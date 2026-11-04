@@ -1,0 +1,9 @@
+{
+  "observation": {
+    "message": "指定collection内では対象資料を取得できません: E-B04.txt",
+    "note": "この試行は手数に数えます。引数を修正するか別の行動を選んでください。",
+    "status": "error"
+  },
+  "remaining_steps": 7,
+  "session_status": "active"
+}

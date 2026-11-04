@@ -1,0 +1,28 @@
+{
+  "observation": {
+    "left": "2026-04-22T09:00:00+09:00",
+    "note": "渡された値を決定的に比較しました。根拠行の実在・完全行の観測を確認しましたが、値の抽出の正しさや規程・条件への適用は保証しません。",
+    "op": "lt",
+    "refs": [
+      {
+        "document": "E-A04.txt",
+        "lines": [
+          8
+        ]
+      },
+      {
+        "document": "E-O04.txt",
+        "lines": [
+          6
+        ]
+      }
+    ],
+    "result": true,
+    "right": "2026-04-22T10:00:00+09:00",
+    "status": "ok",
+    "type": "compare",
+    "value_type": "datetime"
+  },
+  "remaining_steps": 4,
+  "session_status": "active"
+}

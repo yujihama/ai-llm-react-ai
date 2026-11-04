@@ -1,0 +1,19 @@
+{
+  "id": "C_same",
+  "initial_documents": [
+    "learner/evidence/C/E-L04.txt",
+    "learner/evidence/C/E-O04.txt",
+    "learner/evidence/C/E-A04.txt",
+    "learner/evidence/C/E-D04.txt",
+    "learner/evidence/C/E-B04.txt",
+    "learner/evidence/C/E-R01.txt"
+  ],
+  "instructions": "learner/agent_instructions.txt",
+  "procedure": "learner/procedures/P01_C.txt",
+  "collections": {
+    "policy": "learner/corpus/policy",
+    "evidence": "learner/corpus/evidence_available"
+  },
+  "structure": "learner/structure.json",
+  "max_steps": 10
+}

@@ -1,0 +1,576 @@
+{
+  "schema_version": 1,
+  "query": "設備部 購買 承認 権限 税抜 発注",
+  "normalized_query": "設備部購買承認権限税抜発注",
+  "parameters": {
+    "chunk_size": 400,
+    "overlap": 0,
+    "top_k": 3
+  },
+  "method": "character_bigram_tfidf",
+  "query_terms": {
+    "備部": 1,
+    "承認": 1,
+    "抜発": 1,
+    "権限": 1,
+    "発注": 1,
+    "税抜": 1,
+    "設備": 1,
+    "認権": 1,
+    "買承": 1,
+    "購買": 1,
+    "部購": 1,
+    "限税": 1
+  },
+  "query_vector": {
+    "備部": 0.32768213152229503,
+    "承認": 0.21945254246909168,
+    "抜発": 0.39099238258687985,
+    "権限": 0.32768213152229503,
+    "発注": 0.2479206481193367,
+    "税抜": 0.2479206481193367,
+    "設備": 0.21945254246909168,
+    "認権": 0.39099238258687985,
+    "買承": 0.39099238258687985,
+    "購買": 0.32768213152229503
+  },
+  "candidate_count": 8,
+  "positive_score_count": 6,
+  "retrieved_count": 3,
+  "selected_chunk_ids": [
+    "chunk-000004",
+    "chunk-000007",
+    "chunk-000005"
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "chunk_id": "chunk-000004",
+      "source": "E-P02.txt",
+      "start_offset": 0,
+      "end_offset": 400,
+      "source_start_line": 1,
+      "source_end_line": 8,
+      "starts_mid_line": false,
+      "ends_mid_line": true,
+      "lines": [
+        {
+          "source_line": 1,
+          "label": null,
+          "label_start_offset": null,
+          "label_end_offset": null,
+          "start_offset": 0,
+          "end_offset": 24
+        },
+        {
+          "source_line": 2,
+          "label": null,
+          "label_start_offset": null,
+          "label_end_offset": null,
+          "start_offset": 24,
+          "end_offset": 44
+        },
+        {
+          "source_line": 3,
+          "label": "L01",
+          "label_start_offset": 44,
+          "label_end_offset": 47,
+          "start_offset": 44,
+          "end_offset": 85
+        },
+        {
+          "source_line": 4,
+          "label": "L02",
+          "label_start_offset": 85,
+          "label_end_offset": 88,
+          "start_offset": 85,
+          "end_offset": 145
+        },
+        {
+          "source_line": 5,
+          "label": "L03",
+          "label_start_offset": 145,
+          "label_end_offset": 148,
+          "start_offset": 145,
+          "end_offset": 201
+        },
+        {
+          "source_line": 6,
+          "label": "L04",
+          "label_start_offset": 201,
+          "label_end_offset": 204,
+          "start_offset": 201,
+          "end_offset": 271
+        },
+        {
+          "source_line": 7,
+          "label": "L05",
+          "label_start_offset": 271,
+          "label_end_offset": 274,
+          "start_offset": 271,
+          "end_offset": 338
+        },
+        {
+          "source_line": 8,
+          "label": "L06",
+          "label_start_offset": 338,
+          "label_end_offset": 341,
+          "start_offset": 338,
+          "end_offset": 400
+        }
+      ],
+      "score": 0.39233599098677635,
+      "selected": true
+    },
+    {
+      "rank": 2,
+      "chunk_id": "chunk-000007",
+      "source": "E-P02.txt",
+      "start_offset": 1200,
+      "end_offset": 1600,
+      "source_start_line": 20,
+      "source_end_line": 25,
+      "starts_mid_line": true,
+      "ends_mid_line": true,
+      "lines": [
+        {
+          "source_line": 20,
+          "label": "L18",
+          "label_start_offset": 1172,
+          "label_end_offset": 1175,
+          "start_offset": 1200,
+          "end_offset": 1244
+        },
+        {
+          "source_line": 21,
+          "label": "L19",
+          "label_start_offset": 1244,
+          "label_end_offset": 1247,
+          "start_offset": 1244,
+          "end_offset": 1317
+        },
+        {
+          "source_line": 22,
+          "label": "L20",
+          "label_start_offset": 1317,
+          "label_end_offset": 1320,
+          "start_offset": 1317,
+          "end_offset": 1391
+        },
+        {
+          "source_line": 23,
+          "label": "L21",
+          "label_start_offset": 1391,
+          "label_end_offset": 1394,
+          "start_offset": 1391,
+          "end_offset": 1466
+        },
+        {
+          "source_line": 24,
+          "label": "L22",
+          "label_start_offset": 1466,
+          "label_end_offset": 1469,
+          "start_offset": 1466,
+          "end_offset": 1546
+        },
+        {
+          "source_line": 25,
+          "label": "L23",
+          "label_start_offset": 1546,
+          "label_end_offset": 1549,
+          "start_offset": 1546,
+          "end_offset": 1600
+        }
+      ],
+      "score": 0.12195805064375972,
+      "selected": true
+    },
+    {
+      "rank": 3,
+      "chunk_id": "chunk-000005",
+      "source": "E-P02.txt",
+      "start_offset": 400,
+      "end_offset": 800,
+      "source_start_line": 8,
+      "source_end_line": 14,
+      "starts_mid_line": true,
+      "ends_mid_line": true,
+      "lines": [
+        {
+          "source_line": 8,
+          "label": "L06",
+          "label_start_offset": 338,
+          "label_end_offset": 341,
+          "start_offset": 400,
+          "end_offset": 405
+        },
+        {
+          "source_line": 9,
+          "label": "L07",
+          "label_start_offset": 405,
+          "label_end_offset": 408,
+          "start_offset": 405,
+          "end_offset": 471
+        },
+        {
+          "source_line": 10,
+          "label": "L08",
+          "label_start_offset": 471,
+          "label_end_offset": 474,
+          "start_offset": 471,
+          "end_offset": 542
+        },
+        {
+          "source_line": 11,
+          "label": "L09",
+          "label_start_offset": 542,
+          "label_end_offset": 545,
+          "start_offset": 542,
+          "end_offset": 608
+        },
+        {
+          "source_line": 12,
+          "label": "L10",
+          "label_start_offset": 608,
+          "label_end_offset": 611,
+          "start_offset": 608,
+          "end_offset": 678
+        },
+        {
+          "source_line": 13,
+          "label": "L11",
+          "label_start_offset": 678,
+          "label_end_offset": 681,
+          "start_offset": 678,
+          "end_offset": 748
+        },
+        {
+          "source_line": 14,
+          "label": "L12",
+          "label_start_offset": 748,
+          "label_end_offset": 751,
+          "start_offset": 748,
+          "end_offset": 800
+        }
+      ],
+      "score": 0.09814683393213838,
+      "selected": true
+    },
+    {
+      "rank": 4,
+      "chunk_id": "chunk-000008",
+      "source": "E-P02.txt",
+      "start_offset": 1600,
+      "end_offset": 1928,
+      "source_start_line": 25,
+      "source_end_line": 29,
+      "starts_mid_line": true,
+      "ends_mid_line": false,
+      "lines": [
+        {
+          "source_line": 25,
+          "label": "L23",
+          "label_start_offset": 1546,
+          "label_end_offset": 1549,
+          "start_offset": 1600,
+          "end_offset": 1625
+        },
+        {
+          "source_line": 26,
+          "label": "L24",
+          "label_start_offset": 1625,
+          "label_end_offset": 1628,
+          "start_offset": 1625,
+          "end_offset": 1705
+        },
+        {
+          "source_line": 27,
+          "label": "L25",
+          "label_start_offset": 1705,
+          "label_end_offset": 1708,
+          "start_offset": 1705,
+          "end_offset": 1782
+        },
+        {
+          "source_line": 28,
+          "label": "L26",
+          "label_start_offset": 1782,
+          "label_end_offset": 1785,
+          "start_offset": 1782,
+          "end_offset": 1861
+        },
+        {
+          "source_line": 29,
+          "label": "L27",
+          "label_start_offset": 1861,
+          "label_end_offset": 1864,
+          "start_offset": 1861,
+          "end_offset": 1928
+        }
+      ],
+      "score": 0.09747208437083119,
+      "selected": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "chunk-000006",
+      "source": "E-P02.txt",
+      "start_offset": 800,
+      "end_offset": 1200,
+      "source_start_line": 14,
+      "source_end_line": 20,
+      "starts_mid_line": true,
+      "ends_mid_line": true,
+      "lines": [
+        {
+          "source_line": 14,
+          "label": "L12",
+          "label_start_offset": 748,
+          "label_end_offset": 751,
+          "start_offset": 800,
+          "end_offset": 818
+        },
+        {
+          "source_line": 15,
+          "label": "L13",
+          "label_start_offset": 818,
+          "label_end_offset": 821,
+          "start_offset": 818,
+          "end_offset": 887
+        },
+        {
+          "source_line": 16,
+          "label": "L14",
+          "label_start_offset": 887,
+          "label_end_offset": 890,
+          "start_offset": 887,
+          "end_offset": 952
+        },
+        {
+          "source_line": 17,
+          "label": "L15",
+          "label_start_offset": 952,
+          "label_end_offset": 955,
+          "start_offset": 952,
+          "end_offset": 1024
+        },
+        {
+          "source_line": 18,
+          "label": "L16",
+          "label_start_offset": 1024,
+          "label_end_offset": 1027,
+          "start_offset": 1024,
+          "end_offset": 1095
+        },
+        {
+          "source_line": 19,
+          "label": "L17",
+          "label_start_offset": 1095,
+          "label_end_offset": 1098,
+          "start_offset": 1095,
+          "end_offset": 1172
+        },
+        {
+          "source_line": 20,
+          "label": "L18",
+          "label_start_offset": 1172,
+          "label_end_offset": 1175,
+          "start_offset": 1172,
+          "end_offset": 1200
+        }
+      ],
+      "score": 0.031460988660624606,
+      "selected": false
+    },
+    {
+      "rank": 6,
+      "chunk_id": "chunk-000003",
+      "source": "D-TR01.txt",
+      "start_offset": 0,
+      "end_offset": 137,
+      "source_start_line": 1,
+      "source_end_line": 6,
+      "starts_mid_line": false,
+      "ends_mid_line": false,
+      "lines": [
+        {
+          "source_line": 1,
+          "label": null,
+          "label_start_offset": null,
+          "label_end_offset": null,
+          "start_offset": 0,
+          "end_offset": 14
+        },
+        {
+          "source_line": 2,
+          "label": null,
+          "label_start_offset": null,
+          "label_end_offset": null,
+          "start_offset": 14,
+          "end_offset": 29
+        },
+        {
+          "source_line": 3,
+          "label": "L01",
+          "label_start_offset": 29,
+          "label_end_offset": 32,
+          "start_offset": 29,
+          "end_offset": 53
+        },
+        {
+          "source_line": 4,
+          "label": "L02",
+          "label_start_offset": 53,
+          "label_end_offset": 56,
+          "start_offset": 53,
+          "end_offset": 83
+        },
+        {
+          "source_line": 5,
+          "label": "L03",
+          "label_start_offset": 83,
+          "label_end_offset": 86,
+          "start_offset": 83,
+          "end_offset": 105
+        },
+        {
+          "source_line": 6,
+          "label": "L04",
+          "label_start_offset": 105,
+          "label_end_offset": 108,
+          "start_offset": 105,
+          "end_offset": 137
+        }
+      ],
+      "score": 0.025340140925747108,
+      "selected": false
+    },
+    {
+      "rank": 7,
+      "chunk_id": "chunk-000001",
+      "source": "D-HR01.txt",
+      "start_offset": 0,
+      "end_offset": 131,
+      "source_start_line": 1,
+      "source_end_line": 6,
+      "starts_mid_line": false,
+      "ends_mid_line": false,
+      "lines": [
+        {
+          "source_line": 1,
+          "label": null,
+          "label_start_offset": null,
+          "label_end_offset": null,
+          "start_offset": 0,
+          "end_offset": 16
+        },
+        {
+          "source_line": 2,
+          "label": null,
+          "label_start_offset": null,
+          "label_end_offset": null,
+          "start_offset": 16,
+          "end_offset": 31
+        },
+        {
+          "source_line": 3,
+          "label": "L01",
+          "label_start_offset": 31,
+          "label_end_offset": 34,
+          "start_offset": 31,
+          "end_offset": 55
+        },
+        {
+          "source_line": 4,
+          "label": "L02",
+          "label_start_offset": 55,
+          "label_end_offset": 58,
+          "start_offset": 55,
+          "end_offset": 84
+        },
+        {
+          "source_line": 5,
+          "label": "L03",
+          "label_start_offset": 84,
+          "label_end_offset": 87,
+          "start_offset": 84,
+          "end_offset": 106
+        },
+        {
+          "source_line": 6,
+          "label": "L04",
+          "label_start_offset": 106,
+          "label_end_offset": 109,
+          "start_offset": 106,
+          "end_offset": 131
+        }
+      ],
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "rank": 8,
+      "chunk_id": "chunk-000002",
+      "source": "D-IT01.txt",
+      "start_offset": 0,
+      "end_offset": 117,
+      "source_start_line": 1,
+      "source_end_line": 6,
+      "starts_mid_line": false,
+      "ends_mid_line": false,
+      "lines": [
+        {
+          "source_line": 1,
+          "label": null,
+          "label_start_offset": null,
+          "label_end_offset": null,
+          "start_offset": 0,
+          "end_offset": 15
+        },
+        {
+          "source_line": 2,
+          "label": null,
+          "label_start_offset": null,
+          "label_end_offset": null,
+          "start_offset": 15,
+          "end_offset": 30
+        },
+        {
+          "source_line": 3,
+          "label": "L01",
+          "label_start_offset": 30,
+          "label_end_offset": 33,
+          "start_offset": 30,
+          "end_offset": 54
+        },
+        {
+          "source_line": 4,
+          "label": "L02",
+          "label_start_offset": 54,
+          "label_end_offset": 57,
+          "start_offset": 54,
+          "end_offset": 78
+        },
+        {
+          "source_line": 5,
+          "label": "L03",
+          "label_start_offset": 78,
+          "label_end_offset": 81,
+          "start_offset": 78,
+          "end_offset": 98
+        },
+        {
+          "source_line": 6,
+          "label": "L04",
+          "label_start_offset": 98,
+          "label_end_offset": 101,
+          "start_offset": 98,
+          "end_offset": 117
+        }
+      ],
+      "score": 0.0,
+      "selected": false
+    }
+  ],
+  "base_sha256": "7302ee19739c68c2cda1e60d2f11112752ed6156d613a16a076c7500372d0517"
+}

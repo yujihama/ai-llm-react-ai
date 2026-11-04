@@ -1,0 +1,109 @@
+{
+  "unit": "Unicode code points",
+  "note": "文字数はUTF-8復号後のUnicodeコードポイント数。トークン数ではない。full_history_promptは固定指示・初期証跡・その時点の全履歴から再構成した値で、実際のモデル要求全体の長さではない。モデル選択例は初回の初期入力と、その後の最新観測を同じ会話で中継しており、全履歴を毎回重複送信していない。チャットの枠組みや評価を行うLLMへのラッパー指示は文字数に含めない。step観測ファイルは凍結済み履歴と同一runtimeからの再構成であり、中継された全通信の生ログではない。",
+  "run": {
+    "category": "scripted",
+    "scenario": "C_same",
+    "source_run": "runs/verified_C_same",
+    "steps": 4,
+    "action_counts": {
+      "search": 1,
+      "read": 1,
+      "compare": 1,
+      "finish": 1
+    },
+    "observation_counts": {
+      "ok": 4
+    },
+    "session_status": "finished",
+    "reported_condition_statuses": {
+      "C1": "条件充足",
+      "C2": "条件充足",
+      "C3": "条件充足",
+      "C4": "条件充足"
+    },
+    "initial_prompt_characters": 6211,
+    "final_prompt_characters": 14502,
+    "initial_prompt_sha256": "67b44bc8f38983f132ab6383fcb7f0ab97af1a9d88669dda140e61c8e805b809",
+    "final_prompt_sha256": "e55a7c7823f24e5c8138f2c17a279916fc06f9f6653d83b31c255a0f1a2631ee",
+    "trace_sha256": "8e3e50566479cec47f2487d492a68a2b49e12233ed3df9a7dff7c20b65c30791"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action_type": "search",
+      "purpose": "承認者の権限を評価するため社内規程を取得する",
+      "action_file": "action-01.json",
+      "action_sha256": "dd469e4c7a5cca0844f6cc7bc7e886e0ed2c21fae9f3af0f458d0c8d48e22692",
+      "action_file_characters": 142,
+      "full_history_prompt_before_characters": 6211,
+      "full_history_prompt_before_sha256": "67b44bc8f38983f132ab6383fcb7f0ab97af1a9d88669dda140e61c8e805b809",
+      "observation_file": "step-01-observation.txt",
+      "observation_status": "ok",
+      "canonical_observation_characters": 1202,
+      "canonical_observation_sha256": "0ce50ee99d556162032daf65e121468fc461ad90579a13cacb72b07d29d8b098",
+      "relay_observation_format": "LLMへの中継なし。事前記述した行動をローカルで再生。",
+      "full_history_prompt_after_characters": 7550,
+      "full_history_prompt_after_sha256": "e195beec3dad866069675b565002605b4d9f6f1c1952e3bd77ca88606d34a9d9",
+      "remaining_steps": 9,
+      "session_status": "active"
+    },
+    {
+      "step": 2,
+      "action_type": "read",
+      "purpose": "第1条の参照先にある適用条件と委任例外を確認する",
+      "action_file": "action-02.json",
+      "action_sha256": "3b64a3d453478c643d950173bde4bde606acfdf7b118acb4b4963823ce9d601a",
+      "action_file_characters": 159,
+      "full_history_prompt_before_characters": 7550,
+      "full_history_prompt_before_sha256": "e195beec3dad866069675b565002605b4d9f6f1c1952e3bd77ca88606d34a9d9",
+      "observation_file": "step-02-observation.txt",
+      "observation_status": "ok",
+      "canonical_observation_characters": 2303,
+      "canonical_observation_sha256": "62b51c57302a6b87340802581ae1794e3d927e991e5e956aa2863a23a58ca583",
+      "relay_observation_format": "LLMへの中継なし。事前記述した行動をローカルで再生。",
+      "full_history_prompt_after_characters": 10022,
+      "full_history_prompt_after_sha256": "ecef01b2d38add5060fcd0ef0174164db3c6206050c6a8c9ff84ba203da1389d",
+      "remaining_steps": 8,
+      "session_status": "active"
+    },
+    {
+      "step": 3,
+      "action_type": "compare",
+      "purpose": "記録上の承認が発注より前かを秒まで比較する",
+      "action_file": "action-03.json",
+      "action_sha256": "3737710dafeb9b53439829260f711b2d5f7f2d0167bddcd0a9b9fbfc0885babd",
+      "action_file_characters": 379,
+      "full_history_prompt_before_characters": 10022,
+      "full_history_prompt_before_sha256": "ecef01b2d38add5060fcd0ef0174164db3c6206050c6a8c9ff84ba203da1389d",
+      "observation_file": "step-03-observation.txt",
+      "observation_status": "ok",
+      "canonical_observation_characters": 555,
+      "canonical_observation_sha256": "5b55dbf7a62eea045b08c0fd3ddefcfaa53926c7f0d748bdc27b1de75a39fe25",
+      "relay_observation_format": "LLMへの中継なし。事前記述した行動をローカルで再生。",
+      "full_history_prompt_after_characters": 10978,
+      "full_history_prompt_after_sha256": "e6f39a99075df67b9744976dd6986e1d52a7a9c1143d76875734ec218445d2e6",
+      "remaining_steps": 7,
+      "session_status": "active"
+    },
+    {
+      "step": 4,
+      "action_type": "finish",
+      "purpose": "観測できた根拠から条件別の結果と未解決事項を提出する",
+      "action_file": "action-04.json",
+      "action_sha256": "fb358383ba46de9e5e5660652005c2c09fe5973a4857f4b8758c35562f0a4ca5",
+      "action_file_characters": 3124,
+      "full_history_prompt_before_characters": 10978,
+      "full_history_prompt_before_sha256": "e6f39a99075df67b9744976dd6986e1d52a7a9c1143d76875734ec218445d2e6",
+      "observation_file": "step-04-observation.txt",
+      "observation_status": "ok",
+      "canonical_observation_characters": 227,
+      "canonical_observation_sha256": "5bafd0d99da9c70d129f65ec565812abfe65bc8a63b30f5fa775206d38ae1f1d",
+      "relay_observation_format": "LLMへの中継なし。事前記述した行動をローカルで再生。",
+      "full_history_prompt_after_characters": 14502,
+      "full_history_prompt_after_sha256": "e55a7c7823f24e5c8138f2c17a279916fc06f9f6653d83b31c255a0f1a2631ee",
+      "remaining_steps": 6,
+      "session_status": "finished"
+    }
+  ]
+}

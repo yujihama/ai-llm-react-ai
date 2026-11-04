@@ -1,0 +1,22 @@
+{
+  "type": "compare",
+  "op": "le",
+  "value_type": "datetime",
+  "left": "2026-04-13T14:00:00+09:00",
+  "right": "2026-04-22T09:00:00+09:00",
+  "refs": [
+    {
+      "document": "E-B04.txt",
+      "lines": [
+        5
+      ]
+    },
+    {
+      "document": "E-A04.txt",
+      "lines": [
+        8
+      ]
+    }
+  ],
+  "purpose": "予算承認が発注承認以前に確定しているか比較する"
+}

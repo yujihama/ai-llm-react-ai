@@ -1,0 +1,10 @@
+{
+  "observation": {
+    "accepted": true,
+    "note": "4条件の提出を受け付けました。根拠行の観測は検査しましたが、判定内容や規程適用の正誤は評価していません。人がレビューしてください。",
+    "status": "ok",
+    "type": "finish"
+  },
+  "remaining_steps": 4,
+  "session_status": "finished"
+}

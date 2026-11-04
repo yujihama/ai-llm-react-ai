@@ -1,0 +1,86 @@
+[
+  {
+    "id": "C_basic",
+    "mode": "basic",
+    "corpus": "learner/corpus/C",
+    "base": "learner/base/case_C.txt",
+    "query": "設備部 購買 承認 権限 税抜 発注",
+    "chunk_size": 400,
+    "overlap": 0,
+    "top_k": 1,
+    "max_sections": 20,
+    "structure": "learner/structure.json"
+  },
+  {
+    "id": "C_parent",
+    "mode": "parent",
+    "corpus": "learner/corpus/C",
+    "base": "learner/base/case_C.txt",
+    "query": "設備部 購買 承認 権限 税抜 発注",
+    "chunk_size": 400,
+    "overlap": 0,
+    "top_k": 1,
+    "max_sections": 20,
+    "structure": "learner/structure.json"
+  },
+  {
+    "id": "C_linked",
+    "mode": "linked",
+    "corpus": "learner/corpus/C",
+    "base": "learner/base/case_C.txt",
+    "query": "設備部 購買 承認 権限 税抜 発注",
+    "chunk_size": 400,
+    "overlap": 0,
+    "top_k": 1,
+    "max_sections": 20,
+    "structure": "learner/structure.json"
+  },
+  {
+    "id": "C_basic_k5",
+    "mode": "basic",
+    "corpus": "learner/corpus/C",
+    "base": "learner/base/case_C.txt",
+    "query": "設備部 購買 承認 権限 税抜 発注",
+    "chunk_size": 400,
+    "overlap": 0,
+    "top_k": 5,
+    "max_sections": 20,
+    "structure": "learner/structure.json"
+  },
+  {
+    "id": "C_exception_basic",
+    "mode": "basic",
+    "corpus": "learner/corpus/C",
+    "base": "learner/base/case_C.txt",
+    "query": "設備更新 発注 委任例外 部長 承認 第5条",
+    "chunk_size": 400,
+    "overlap": 0,
+    "top_k": 1,
+    "max_sections": 20,
+    "structure": "learner/structure.json"
+  },
+  {
+    "id": "C_exception_parent",
+    "mode": "parent",
+    "corpus": "learner/corpus/C",
+    "base": "learner/base/case_C.txt",
+    "query": "設備更新 発注 委任例外 部長 承認 第5条",
+    "chunk_size": 400,
+    "overlap": 0,
+    "top_k": 1,
+    "max_sections": 20,
+    "structure": "learner/structure.json"
+  },
+  {
+    "id": "C_limited",
+    "mode": "linked",
+    "corpus": "learner/corpus/C",
+    "base": "learner/base/case_C.txt",
+    "query": "設備部 購買 承認 権限 税抜 発注",
+    "chunk_size": 400,
+    "overlap": 0,
+    "top_k": 1,
+    "max_sections": 3,
+    "structure": "learner/structure.json"
+  }
+]

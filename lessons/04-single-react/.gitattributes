@@ -1,0 +1,8 @@
+*.txt text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.docx binary
+# Preserve recorded action bytes and their SHA-256 values across checkouts.
+instructor/examples/scripted/*/action-*.json -text

@@ -1,0 +1,6 @@
+{
+  "type": "read",
+  "collection": "evidence",
+  "document": "E-B04.txt",
+  "purpose": "既知の予算明細IDから全文と取消記録まで確認する"
+}

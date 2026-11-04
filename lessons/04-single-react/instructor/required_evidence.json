@@ -1,0 +1,331 @@
+{
+  "description": "これは講師用の根拠設計。検索順位・返却chunkを指定するものではなく、学習者向け入力に含めない。",
+  "C2_policy_coverage_note": "C2_policy_required_groupsの全行にある必要記述が、実際にLLMへ渡った文字範囲に含まれるかを確認する。行番号の出現だけで充足としない。原則の説明に使う補足行はC2_policy_supporting_groupsに分け、必須coverageの分母に含めない。初期証跡の委任書・予算・在任名簿がすべて渡される本fixtureを前提とする。",
+  "C2_policy_required_groups": [
+    {
+      "group_id": "policy_applicability",
+      "purpose": "規程の有効期間、対象部門と設備更新予算への限定",
+      "evidence_id": "E-P02",
+      "lines": [
+        17,
+        18
+      ]
+    },
+    {
+      "group_id": "formal_delegation",
+      "purpose": "正式委任の必要事項、発行順序、委任者と受任者の役職",
+      "evidence_id": "E-P02",
+      "lines": [
+        19,
+        20
+      ]
+    },
+    {
+      "group_id": "delegation_period",
+      "purpose": "委任期間の判定時点、境界、取消・停止の確認",
+      "evidence_id": "E-P02",
+      "lines": [
+        21
+      ]
+    },
+    {
+      "group_id": "delegation_amount_cap",
+      "purpose": "規程と個別委任の金額上限",
+      "evidence_id": "E-P02",
+      "lines": [
+        22
+      ]
+    },
+    {
+      "group_id": "budget_conditions",
+      "purpose": "予算の先行承認と部門・明細・品目・金額の対応",
+      "evidence_id": "E-P02",
+      "lines": [
+        23
+      ]
+    },
+    {
+      "group_id": "delegated_approval_exception",
+      "purpose": "部長承認を認める例外と、委任ID・予算明細への対応",
+      "evidence_id": "E-P02",
+      "lines": [
+        24,
+        25
+      ]
+    }
+  ],
+  "C2_policy_supporting_groups": [
+    {
+      "group_id": "general_principle",
+      "purpose": "通常の承認権限と税抜発注額の説明。例外適用の根拠を説明するときの補足。",
+      "evidence_id": "E-P02",
+      "lines": [
+        3,
+        5
+      ]
+    }
+  ],
+  "C1": [
+    {
+      "evidence_id": "E-L04",
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "evidence_id": "E-A04",
+      "lines": [
+        2,
+        3,
+        7,
+        10
+      ]
+    }
+  ],
+  "C2": [
+    {
+      "purpose": "通常の金額区分",
+      "refs": [
+        {
+          "evidence_id": "E-P02",
+          "lines": [
+            3,
+            5
+          ]
+        },
+        {
+          "evidence_id": "E-O04",
+          "lines": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "purpose": "本規程の有効期間と対象部門",
+      "refs": [
+        {
+          "evidence_id": "E-P02",
+          "lines": [
+            17,
+            18
+          ]
+        },
+        {
+          "evidence_id": "E-O04",
+          "lines": [
+            2
+          ]
+        },
+        {
+          "evidence_id": "E-A04",
+          "lines": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "purpose": "正式委任による部長承認を認める条項",
+      "refs": [
+        {
+          "evidence_id": "E-P02",
+          "lines": [
+            24,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "purpose": "正式委任書の必要事項と発行順序",
+      "refs": [
+        {
+          "evidence_id": "E-P02",
+          "lines": [
+            19,
+            20
+          ]
+        },
+        {
+          "evidence_id": "E-D04",
+          "lines": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "evidence_id": "E-A04",
+          "lines": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "purpose": "委任者・受任者の役職と在任期間",
+      "refs": [
+        {
+          "evidence_id": "E-D04",
+          "lines": [
+            3,
+            4,
+            9
+          ]
+        },
+        {
+          "evidence_id": "E-A04",
+          "lines": [
+            6,
+            8
+          ]
+        },
+        {
+          "evidence_id": "E-R01",
+          "lines": [
+            3,
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "purpose": "委任期間と取消・停止の有無",
+      "refs": [
+        {
+          "evidence_id": "E-P02",
+          "lines": [
+            21
+          ]
+        },
+        {
+          "evidence_id": "E-D04",
+          "lines": [
+            8,
+            11
+          ]
+        },
+        {
+          "evidence_id": "E-A04",
+          "lines": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "purpose": "規程と個別委任書の金額上限",
+      "refs": [
+        {
+          "evidence_id": "E-P02",
+          "lines": [
+            22
+          ]
+        },
+        {
+          "evidence_id": "E-D04",
+          "lines": [
+            7
+          ]
+        },
+        {
+          "evidence_id": "E-O04",
+          "lines": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "purpose": "予算の事前承認と部門・案件・金額の対応",
+      "refs": [
+        {
+          "evidence_id": "E-P02",
+          "lines": [
+            18,
+            23
+          ]
+        },
+        {
+          "evidence_id": "E-B04",
+          "lines": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "evidence_id": "E-O04",
+          "lines": [
+            2,
+            3,
+            5,
+            8,
+            9
+          ]
+        },
+        {
+          "evidence_id": "E-D04",
+          "lines": [
+            5,
+            6
+          ]
+        },
+        {
+          "evidence_id": "E-A04",
+          "lines": [
+            8,
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "C3": [
+    {
+      "evidence_id": "E-A04",
+      "lines": [
+        8
+      ]
+    },
+    {
+      "evidence_id": "E-O04",
+      "lines": [
+        6
+      ]
+    }
+  ],
+  "C4": [
+    {
+      "evidence_id": "E-O04",
+      "lines": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "evidence_id": "E-A04",
+      "lines": [
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

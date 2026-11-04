@@ -1,0 +1,6 @@
+# Keep input hashes stable after checkout on Windows and other platforms.
+*.txt text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.docx binary

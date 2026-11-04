@@ -1,0 +1,32 @@
+{
+  "note": "教材の証跡に基づく期待。LLMの性能測定値ではない。早期保留は慎重さと取得未完了を別採点。",
+  "scenarios": [
+    {
+      "id": "C_same",
+      "fixed_rag_C2": "条件充足",
+      "react_after_sufficient_acquisition_C2": "条件充足",
+      "initial_budget": true,
+      "budget_accessible": true
+    },
+    {
+      "id": "C_deferred",
+      "fixed_rag_C2": "判定保留",
+      "react_after_sufficient_acquisition_C2": "条件充足",
+      "initial_budget": false,
+      "budget_accessible": true
+    },
+    {
+      "id": "C_unavailable",
+      "fixed_rag_C2": "判定保留",
+      "react_after_sufficient_acquisition_C2": "判定保留",
+      "initial_budget": false,
+      "budget_accessible": false
+    }
+  ],
+  "other_conditions": {
+    "C1": "条件充足",
+    "C3": "条件充足",
+    "C4": "条件充足"
+  },
+  "halted_budget": "未完了。finish未提出を判定保留に変換しない。"
+}

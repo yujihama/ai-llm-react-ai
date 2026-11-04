@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "mode": "linked",
+  "structure_sha256": "b1cddd0b2930d438b04659a6df1c08f36614a35e05966170323f2da934be7e2a",
+  "budget": {
+    "max_sections": 20,
+    "selected_units": 5,
+    "unit": "重複排除後の節または対応表にないraw chunk。両方を1件と数える。",
+    "omitted_attempts": 0,
+    "limit_reached": false
+  },
+  "selection_order": "全seedを順位順・節開始位置順に処理した後、明示参照を記載順のFIFOで処理する。",
+  "presentation_order": "本文の原文断片はsource・start_offset・end_offsetの昇順に表示する。unit_idと選択履歴は維持する。",
+  "score_scope": "検索スコアはseed chunkだけの値。節または参照先のスコアではない。",
+  "offset_unit": "原文のUnicodeコードポイント。開始を含み、終了を含まない。",
+  "deduplication_key": "source・kind・section_id・start_offset・end_offsetが同一の取得単位。",
+  "seeds": [
+    {
+      "seed_rank": 1,
+      "chunk_id": "chunk-000004",
+      "source": "E-P02.txt",
+      "start_offset": 0,
+      "end_offset": 400,
+      "score": 0.39233599098677635,
+      "selected_unit_ids": [
+        "unit-000001",
+        "unit-000002",
+        "unit-000003",
+        "unit-000004",
+        "unit-000005"
+      ]
+    }
+  ],
+  "selected_units": [
+    {
+      "kind": "section",
+      "source": "E-P02.txt",
+      "section_id": "preamble",
+      "title": "前文",
+      "start_offset": 0,
+      "end_offset": 145,
+      "text": "E-P02 購買承認権限規程・設備更新委任細則\n文書版 AUTH-EQ-2026-04\nL01 青凪機器株式会社　購買承認権限規程・設備更新委任細則（教材用の架空規程）\nL02 文書版：AUTH-EQ-2026-04。本規程は、購買発注の承認権限と、設備更新に関する委任の取扱いを定める。\n",
+      "unit_id": "unit-000001",
+      "reasons": [
+        {
+          "type": "seed_overlap",
+          "seed_rank": 1,
+          "seed_chunk_id": "chunk-000004"
+        }
+      ],
+      "seed_chunk_ids": [
+        "chunk-000004"
+      ]
+    },
+    {
+      "kind": "section",
+      "source": "E-P02.txt",
+      "section_id": "article1",
+      "title": "第1条",
+      "start_offset": 145,
+      "end_offset": 338,
+      "text": "L03 第1条　通常の承認権限。税抜発注額が1,000,000円以上の発注は、原則として本部長の承認を要する。\nL04 税抜発注額が1,000,000円未満の発注は、部長または本部長が承認できる。委任による例外は第4条の条件と第5条を併せて確認する。\nL05 金額区分には、発注書に記載された発注単位の税抜総額を使う。消費税額、見積額、請求予定額へ読み替えず、桁と通貨単位を確認する。\n",
+      "unit_id": "unit-000002",
+      "reasons": [
+        {
+          "type": "seed_overlap",
+          "seed_rank": 1,
+          "seed_chunk_id": "chunk-000004"
+        }
+      ],
+      "seed_chunk_ids": [
+        "chunk-000004"
+      ]
+    },
+    {
+      "kind": "section",
+      "source": "E-P02.txt",
+      "section_id": "article2",
+      "title": "第2条",
+      "start_offset": 338,
+      "end_offset": 748,
+      "text": "L06 第2条　承認記録の管理。承認申請には取引ID、発注の版、税抜額、発注担当部門、承認対象の品目を記載し、承認履歴と対応付ける。\nL07 承認者が画面を確認しただけの状態、保存中の下書き、差戻しは承認確定として扱わない。確定イベントと確定日時を履歴で確認する。\nL08 発注担当者は承認後に取引IDを付け替えず、発注書と台帳に同じ識別子を保持する。原文の表記揺れを整理した場合も、元の識別子を保存する。\nL09 承認後に税抜額、対象品目または版を変更するときは、変更内容を記録し、変更後の対象について必要な承認を取得してから発注する。\nL10 時刻は日本標準時で記録する。日付が同じでも、承認確定と発注確定の時刻を比較する。時刻が欠ける記録は、別の確定ログで補って確認する。\nL11 記録の保存担当者は、承認の取消、失効、差替えを元の履歴と関連付ける。取消済みの記録を、現在の承認を示す資料として単独で提示しない。\n",
+      "unit_id": "unit-000003",
+      "reasons": [
+        {
+          "type": "seed_overlap",
+          "seed_rank": 1,
+          "seed_chunk_id": "chunk-000004"
+        }
+      ],
+      "seed_chunk_ids": [
+        "chunk-000004"
+      ]
+    },
+    {
+      "kind": "section",
+      "source": "E-P02.txt",
+      "section_id": "article4",
+      "title": "第4条",
+      "start_offset": 1095,
+      "end_offset": 1625,
+      "text": "L17 第4条　細則の適用条件。本規程の有効期間は2026年4月1日00:00:00 JST以上、2026年5月1日00:00:00 JST未満とする。\nL18 本規程の対象部門は設備部である。第5条の委任方式は、設備部の承認済み設備更新予算に含まれる発注だけに適用し、他部門の発注へ拡張しない。\nL19 正式委任書は、本部長が発行し、委任ID、委任者と受任者の社員ID、対象部門、対象予算、金額上限、開始日時、終了日時を明記したものとする。\nL20 委任書の発行確定は、対象発注の承認確定以前でなければならない。委任者は発行時点で本部長、受任者は承認確定時点で部長として在任していること。\nL21 委任の有効性は対象発注の承認確定日時で確認する。委任期間は開始日時を含み終了日時を含まない。承認時点で取消や停止の記録がないことも確認する。\nL22 委任による一発注の上限は税抜2,000,000円とする。個別の委任書にこれより低い上限があるときは低い方を適用し、上限ちょうどの金額は範囲内に含める。\nL23 予算は対象発注の承認確定以前に承認済みであり、対象部門、予算番号、明細番号、品目、税抜額が発注と対応していること。計画残額と対象明細額を混同しない。\n",
+      "unit_id": "unit-000004",
+      "reasons": [
+        {
+          "type": "explicit_reference",
+          "source": "E-P02.txt",
+          "from_unit_id": "unit-000002",
+          "from_section_id": "article1",
+          "target_section_id": "article4",
+          "evidence_line": "L04"
+        },
+        {
+          "type": "explicit_reference",
+          "source": "E-P02.txt",
+          "from_unit_id": "unit-000005",
+          "from_section_id": "article5",
+          "target_section_id": "article4",
+          "evidence_line": "L24"
+        },
+        {
+          "type": "explicit_reference",
+          "source": "E-P02.txt",
+          "from_unit_id": "unit-000005",
+          "from_section_id": "article5",
+          "target_section_id": "article4",
+          "evidence_line": "L26"
+        }
+      ],
+      "seed_chunk_ids": [
+        "chunk-000004"
+      ]
+    },
+    {
+      "kind": "section",
+      "source": "E-P02.txt",
+      "section_id": "article5",
+      "title": "第5条",
+      "start_offset": 1625,
+      "end_offset": 1928,
+      "text": "L24 第5条　設備更新発注の委任例外。第4条の条件をすべて満たす場合、税抜1,000,000円以上の発注でも、正式委任書で指定された部長による承認を認める。\nL25 この例外を使う場合、承認記録から正式委任IDと予算明細をたどれるようにする。部長という役職だけ、または設備更新という名称だけで例外を適用しない。\nL26 第4条の条件が一つでも満たされないことが確認された場合は、本例外を適用しない。資料が不足して条件を確認できない場合は、必要な資料を追加して確認する。\nL27 本細則の委任は承認者の権限に関するものであり、発注前に承認を確定する要件、対象取引・版・税抜額を一致させる要件を変更しない。\n",
+      "unit_id": "unit-000005",
+      "reasons": [
+        {
+          "type": "explicit_reference",
+          "source": "E-P02.txt",
+          "from_unit_id": "unit-000002",
+          "from_section_id": "article1",
+          "target_section_id": "article5",
+          "evidence_line": "L04"
+        },
+        {
+          "type": "explicit_reference",
+          "source": "E-P02.txt",
+          "from_unit_id": "unit-000004",
+          "from_section_id": "article4",
+          "target_section_id": "article5",
+          "evidence_line": "L18"
+        }
+      ],
+      "seed_chunk_ids": [
+        "chunk-000004"
+      ]
+    }
+  ],
+  "expansion_log": [
+    {
+      "source": "E-P02.txt",
+      "section_id": "preamble",
+      "start_offset": 0,
+      "end_offset": 145,
+      "reason": {
+        "type": "seed_overlap",
+        "seed_rank": 1,
+        "seed_chunk_id": "chunk-000004"
+      },
+      "action": "selected",
+      "unit_id": "unit-000001"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article1",
+      "start_offset": 145,
+      "end_offset": 338,
+      "reason": {
+        "type": "seed_overlap",
+        "seed_rank": 1,
+        "seed_chunk_id": "chunk-000004"
+      },
+      "action": "selected",
+      "unit_id": "unit-000002"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article2",
+      "start_offset": 338,
+      "end_offset": 748,
+      "reason": {
+        "type": "seed_overlap",
+        "seed_rank": 1,
+        "seed_chunk_id": "chunk-000004"
+      },
+      "action": "selected",
+      "unit_id": "unit-000003"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article4",
+      "start_offset": 1095,
+      "end_offset": 1625,
+      "reason": {
+        "type": "explicit_reference",
+        "source": "E-P02.txt",
+        "from_unit_id": "unit-000002",
+        "from_section_id": "article1",
+        "target_section_id": "article4",
+        "evidence_line": "L04"
+      },
+      "action": "selected",
+      "unit_id": "unit-000004"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article5",
+      "start_offset": 1625,
+      "end_offset": 1928,
+      "reason": {
+        "type": "explicit_reference",
+        "source": "E-P02.txt",
+        "from_unit_id": "unit-000002",
+        "from_section_id": "article1",
+        "target_section_id": "article5",
+        "evidence_line": "L04"
+      },
+      "action": "selected",
+      "unit_id": "unit-000005"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article5",
+      "start_offset": 1625,
+      "end_offset": 1928,
+      "reason": {
+        "type": "explicit_reference",
+        "source": "E-P02.txt",
+        "from_unit_id": "unit-000004",
+        "from_section_id": "article4",
+        "target_section_id": "article5",
+        "evidence_line": "L18"
+      },
+      "action": "deduplicated",
+      "unit_id": "unit-000005"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article4",
+      "start_offset": 1095,
+      "end_offset": 1625,
+      "reason": {
+        "type": "explicit_reference",
+        "source": "E-P02.txt",
+        "from_unit_id": "unit-000005",
+        "from_section_id": "article5",
+        "target_section_id": "article4",
+        "evidence_line": "L24"
+      },
+      "action": "deduplicated",
+      "unit_id": "unit-000004"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article4",
+      "start_offset": 1095,
+      "end_offset": 1625,
+      "reason": {
+        "type": "explicit_reference",
+        "source": "E-P02.txt",
+        "from_unit_id": "unit-000005",
+        "from_section_id": "article5",
+        "target_section_id": "article4",
+        "evidence_line": "L26"
+      },
+      "action": "deduplicated",
+      "unit_id": "unit-000004"
+    }
+  ],
+  "deduplicated": [
+    {
+      "source": "E-P02.txt",
+      "section_id": "article5",
+      "start_offset": 1625,
+      "end_offset": 1928,
+      "reason": {
+        "type": "explicit_reference",
+        "source": "E-P02.txt",
+        "from_unit_id": "unit-000004",
+        "from_section_id": "article4",
+        "target_section_id": "article5",
+        "evidence_line": "L18"
+      },
+      "action": "deduplicated",
+      "unit_id": "unit-000005"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article4",
+      "start_offset": 1095,
+      "end_offset": 1625,
+      "reason": {
+        "type": "explicit_reference",
+        "source": "E-P02.txt",
+        "from_unit_id": "unit-000005",
+        "from_section_id": "article5",
+        "target_section_id": "article4",
+        "evidence_line": "L24"
+      },
+      "action": "deduplicated",
+      "unit_id": "unit-000004"
+    },
+    {
+      "source": "E-P02.txt",
+      "section_id": "article4",
+      "start_offset": 1095,
+      "end_offset": 1625,
+      "reason": {
+        "type": "explicit_reference",
+        "source": "E-P02.txt",
+        "from_unit_id": "unit-000005",
+        "from_section_id": "article5",
+        "target_section_id": "article4",
+        "evidence_line": "L26"
+      },
+      "action": "deduplicated",
+      "unit_id": "unit-000004"
+    }
+  ],
+  "omitted_units": [],
+  "unexpanded_references": [],
+  "warnings": [],
+  "base_sha256": "7302ee19739c68c2cda1e60d2f11112752ed6156d613a16a076c7500372d0517"
+}

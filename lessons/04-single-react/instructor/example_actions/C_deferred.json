@@ -1,0 +1,234 @@
+{
+  "provenance": "教材用に事前記述した手順例。LLMが自律選択した実測ではない。",
+  "scenario": "C_deferred",
+  "actions": [
+    {
+      "type": "search",
+      "collection": "policy",
+      "query": "設備部 購買 承認 権限 税抜 発注",
+      "top_k": 1,
+      "purpose": "承認者の権限を評価するため社内規程を取得する"
+    },
+    {
+      "type": "read",
+      "collection": "policy",
+      "document": "E-P02.txt",
+      "sections": [
+        4,
+        5
+      ],
+      "purpose": "第1条の参照先にある適用条件と委任例外を確認する"
+    },
+    {
+      "type": "search",
+      "collection": "evidence",
+      "query": "EQ-2026-04-02 明細03 予算承認",
+      "top_k": 1,
+      "purpose": "委任例外で要求された予算の事前承認と明細を確認する"
+    },
+    {
+      "type": "read",
+      "collection": "evidence",
+      "document": "E-B04.txt",
+      "purpose": "既知の予算明細IDから全文と取消記録まで確認する"
+    },
+    {
+      "type": "compare",
+      "op": "le",
+      "value_type": "datetime",
+      "left": "2026-04-13T14:00:00+09:00",
+      "right": "2026-04-22T09:00:00+09:00",
+      "refs": [
+        {
+          "document": "E-B04.txt",
+          "lines": [
+            5
+          ]
+        },
+        {
+          "document": "E-A04.txt",
+          "lines": [
+            8
+          ]
+        }
+      ],
+      "purpose": "予算承認が発注承認以前に確定しているか比較する"
+    },
+    {
+      "type": "compare",
+      "op": "lt",
+      "value_type": "datetime",
+      "left": "2026-04-22T09:00:00+09:00",
+      "right": "2026-04-22T10:00:00+09:00",
+      "refs": [
+        {
+          "document": "E-A04.txt",
+          "lines": [
+            8
+          ]
+        },
+        {
+          "document": "E-O04.txt",
+          "lines": [
+            6
+          ]
+        }
+      ],
+      "purpose": "記録上の承認が発注より前かを秒まで比較する"
+    },
+    {
+      "type": "finish",
+      "purpose": "観測できた根拠から条件別の結果と未解決事項を提出する",
+      "conditions": [
+        {
+          "id": "C1",
+          "status": "条件充足",
+          "explanation": "PO-202604-004に対応するAPR-004の承認確定記録が存在し、評価基準時点まで取消・失効がない。承認者の権限はC2で別に評価する。",
+          "refs": [
+            {
+              "document": "E-L04.txt",
+              "lines": [
+                4,
+                5
+              ]
+            },
+            {
+              "document": "E-A04.txt",
+              "lines": [
+                2,
+                3,
+                7,
+                10
+              ]
+            }
+          ],
+          "missing": []
+        },
+        {
+          "id": "C2",
+          "status": "条件充足",
+          "explanation": "税抜1,500,000円は通常本部長承認を要する区分だが、本件は設備部の承認済み設備更新予算に対応し、正式委任DLG-2026-04-017による部長承認の例外条件をすべて満たす。委任者EMP-001は発行時点で本部長、受任者EMP-002は承認時点で部長として在任。規程と委任の双方が承認時点で有効で、委任は事前発行、取消・停止なし。1,500,000円は規程・委任書双方の上限2,000,000円以内で、部門・予算ID・明細・品目・税抜額が一致し、予算承認も事前に完了している。",
+          "refs": [
+            {
+              "document": "E-P02.txt",
+              "lines": [
+                3,
+                5,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+              ]
+            },
+            {
+              "document": "E-O04.txt",
+              "lines": [
+                2,
+                3,
+                5,
+                8,
+                9
+              ]
+            },
+            {
+              "document": "E-A04.txt",
+              "lines": [
+                3,
+                6,
+                8,
+                9
+              ]
+            },
+            {
+              "document": "E-D04.txt",
+              "lines": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ]
+            },
+            {
+              "document": "E-B04.txt",
+              "lines": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ]
+            },
+            {
+              "document": "E-R01.txt",
+              "lines": [
+                3,
+                4,
+                6
+              ]
+            }
+          ],
+          "missing": []
+        },
+        {
+          "id": "C3",
+          "status": "条件充足",
+          "explanation": "記録上の承認確定は2026年4月22日09:00 JST、発注確定は同日10:00 JSTであり、承認が1時間前である。",
+          "refs": [
+            {
+              "document": "E-A04.txt",
+              "lines": [
+                8
+              ]
+            },
+            {
+              "document": "E-O04.txt",
+              "lines": [
+                6
+              ]
+            }
+          ],
+          "missing": []
+        },
+        {
+          "id": "C4",
+          "status": "条件充足",
+          "explanation": "発注書と承認履歴の対象取引IDはPO-202604-004、版は1、税抜額は1,500,000円で一致する。",
+          "refs": [
+            {
+              "document": "E-O04.txt",
+              "lines": [
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "document": "E-A04.txt",
+              "lines": [
+                3,
+                4,
+                5
+              ]
+            }
+          ],
+          "missing": []
+        }
+      ],
+      "summary": "確認した4条件は充足。正式委任の条件を満たす部長承認の例外を適用し、例外の適用自体を不備と扱わない。"
+    }
+  ]
+}

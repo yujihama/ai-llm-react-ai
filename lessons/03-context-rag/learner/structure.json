@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "note": "条見出しと条番号による明示参照を原文から整理し、照合した構造マップ。授業で原文と対応を確認する。判定や必要根拠の正解表は含まない。",
+  "documents": [
+    {
+      "source": "E-P02.txt",
+      "sha256": "bd4ed6f3c8165149d34e1821df5e7a419c9afce87220e1e60e339b901a795597",
+      "sections": [
+        {
+          "id": "preamble",
+          "title": "前文",
+          "start_offset": 0,
+          "end_offset": 145,
+          "references": []
+        },
+        {
+          "id": "article1",
+          "title": "第1条",
+          "start_offset": 145,
+          "end_offset": 338,
+          "references": [
+            {
+              "target": "article4",
+              "evidence_line": "L04"
+            },
+            {
+              "target": "article5",
+              "evidence_line": "L04"
+            }
+          ]
+        },
+        {
+          "id": "article2",
+          "title": "第2条",
+          "start_offset": 338,
+          "end_offset": 748,
+          "references": []
+        },
+        {
+          "id": "article3",
+          "title": "第3条",
+          "start_offset": 748,
+          "end_offset": 1095,
+          "references": []
+        },
+        {
+          "id": "article4",
+          "title": "第4条",
+          "start_offset": 1095,
+          "end_offset": 1625,
+          "references": [
+            {
+              "target": "article5",
+              "evidence_line": "L18"
+            }
+          ]
+        },
+        {
+          "id": "article5",
+          "title": "第5条",
+          "start_offset": 1625,
+          "end_offset": 1928,
+          "references": [
+            {
+              "target": "article4",
+              "evidence_line": "L24"
+            },
+            {
+              "target": "article4",
+              "evidence_line": "L26"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "compare",
+  "op": "lt",
+  "value_type": "datetime",
+  "left": "2026-04-22T09:00:00+09:00",
+  "right": "2026-04-22T10:00:00+09:00",
+  "refs": [
+    {
+      "document": "E-A04.txt",
+      "lines": [
+        8
+      ]
+    },
+    {
+      "document": "E-O04.txt",
+      "lines": [
+        6
+      ]
+    }
+  ],
+  "purpose": "記録上の承認が発注より前かを秒まで比較する"
+}

@@ -1,0 +1,11 @@
+{
+  "observation": {
+    "note": "指定collectionで該当資料を取得できませんでした。資料そのものの不存在を意味しません。",
+    "results": [],
+    "retrieved_count": 0,
+    "status": "ok",
+    "type": "search"
+  },
+  "remaining_steps": 7,
+  "session_status": "active"
+}

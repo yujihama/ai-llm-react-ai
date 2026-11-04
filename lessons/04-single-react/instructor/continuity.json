@@ -1,0 +1,56 @@
+{
+  "unchanged_documents": [
+    {
+      "path": "learner/evidence/C/E-A04.txt",
+      "source": "lessons/03-context-rag/learner/evidence/C/E-A04.txt",
+      "sha256": "b96d090df0feeb3f965124c77e4083b41668c6c3fc12f5b04f1d639357fbe329"
+    },
+    {
+      "path": "learner/evidence/C/E-B04.txt",
+      "source": "lessons/03-context-rag/learner/evidence/C/E-B04.txt",
+      "sha256": "a3c9b0b08baaa7612a7a729e364784e850f1915ff9f2bb203c59b9712c3d45ca"
+    },
+    {
+      "path": "learner/evidence/C/E-D04.txt",
+      "source": "lessons/03-context-rag/learner/evidence/C/E-D04.txt",
+      "sha256": "4db6af888dcd1a06896469121ff4d9b7de71a92cf8764e96ff2d9d4449fc9eb8"
+    },
+    {
+      "path": "learner/evidence/C/E-L04.txt",
+      "source": "lessons/03-context-rag/learner/evidence/C/E-L04.txt",
+      "sha256": "4b496cef9d0d414462831cf55bb62c4561bf0adc7ff6cabb3e7bdb307ae410ab"
+    },
+    {
+      "path": "learner/evidence/C/E-O04.txt",
+      "source": "lessons/03-context-rag/learner/evidence/C/E-O04.txt",
+      "sha256": "ccdfa2123cb982983674202b597940dfaaf9aa5e9a78651681aa8eec053e6b6c"
+    },
+    {
+      "path": "learner/evidence/C/E-R01.txt",
+      "source": "lessons/03-context-rag/learner/evidence/C/E-R01.txt",
+      "sha256": "0101d4cf7c109d9b18e67f113145e609cddbb14c18925738ec8f184d9b253e38"
+    },
+    {
+      "path": "learner/corpus/policy/D-HR01.txt",
+      "source": "lessons/03-context-rag/learner/corpus/C/D-HR01.txt",
+      "sha256": "57b49251ebe86aa602aa75695779c5a3983f3730f4deda2820f4279667eeac57"
+    },
+    {
+      "path": "learner/corpus/policy/D-IT01.txt",
+      "source": "lessons/03-context-rag/learner/corpus/C/D-IT01.txt",
+      "sha256": "7b837a0997d5f2a3e430087c1c7acd28a8ffd7991bddebf46af92055b74040b8"
+    },
+    {
+      "path": "learner/corpus/policy/D-TR01.txt",
+      "source": "lessons/03-context-rag/learner/corpus/C/D-TR01.txt",
+      "sha256": "6c8b4448bfeaca1341f53bba6f619618bb93805216a3c86df59ec1930a25382b"
+    },
+    {
+      "path": "learner/corpus/policy/E-P02.txt",
+      "source": "lessons/03-context-rag/learner/corpus/C/E-P02.txt",
+      "sha256": "bd4ed6f3c8165149d34e1821df5e7a419c9afce87220e1e60e339b901a795597"
+    }
+  ],
+  "criteria_preserved": "C1からC4および判定区分は全文同一。運用版表示と実行方式の段落のみ変更。",
+  "availability_note": "取引真値は全シナリオ同一。E-B04の初期提示とアクセス可能性だけを変える。"
+}

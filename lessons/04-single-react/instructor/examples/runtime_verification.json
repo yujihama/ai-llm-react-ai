@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "test_groups": 31,
+  "subprocess_calls": 38,
+  "runtime_sha256": "403755c0afaf9e08eb94a760ad4bfc326b315d48b6d8cf4eadf18bca8ce7adbf",
+  "code_sha256": {
+    "react_lab.py": "403755c0afaf9e08eb94a760ad4bfc326b315d48b6d8cf4eadf18bca8ce7adbf",
+    "basic_retrieve.py": "7bc7bad06cd437210659181ef2a640b4081e789c6668fff20a00dcc0309fdd19",
+    "replay_examples.py": "9dd369c33f746838fda077def0ee63d91452f85048719df444c24c79b82453f5"
+  },
+  "scope": "標準ライブラリだけのローカル制御を隔離コピーで検証したもの。LLMの回答品質・性能を測ったテストではない。",
+  "coverage_summary": [
+    "3シナリオの事前記述リプレイ",
+    "完全行と部分行の区別、複数spanの範囲和",
+    "空検索・原文取得・追加証跡の可視化",
+    "Decimal・タイムゾーン・文字列の決定的比較",
+    "重複行動・schemaエラー・finish・手数予算",
+    "状態・原文hash・trace・promptの整合性",
+    "出力先制限・既存session・保存衝突の拒否"
+  ],
+  "checks": [
+    {
+      "name": "three_scripted_replays_finish",
+      "passed": true
+    },
+    {
+      "name": "unavailable_finishes_with_explicit_hold",
+      "passed": true
+    },
+    {
+      "name": "saved_state_reconstructs_prompt_trace_latest",
+      "passed": true
+    },
+    {
+      "name": "availability_not_leaked_in_initial_prompt",
+      "passed": true
+    },
+    {
+      "name": "same_initial_duplicate_document_allowed",
+      "passed": true
+    },
+    {
+      "name": "existing_init_rejected_without_write",
+      "passed": true
+    },
+    {
+      "name": "invalid_json_leaves_history_unchanged",
+      "passed": true
+    },
+    {
+      "name": "search_real_chunk_and_complete_lines",
+      "passed": true
+    },
+    {
+      "name": "partial_reference_rejected_and_counted",
+      "passed": true
+    },
+    {
+      "name": "duplicate_excludes_purpose_and_no_execution",
+      "passed": true
+    },
+    {
+      "name": "read_explicit_sections_exact",
+      "passed": true
+    },
+    {
+      "name": "decimal_precision_and_extraction_disclaimer",
+      "passed": true
+    },
+    {
+      "name": "timezone_aware_comparison",
+      "passed": true
+    },
+    {
+      "name": "naive_datetime_is_error_observation",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_number_is_error_observation",
+      "passed": true
+    },
+    {
+      "name": "text_exact_equality",
+      "passed": true
+    },
+    {
+      "name": "finish_at_budget_allowed_without_gold_scoring",
+      "passed": true
+    },
+    {
+      "name": "step_after_finish_rejected",
+      "passed": true
+    },
+    {
+      "name": "empty_collection_zero_result",
+      "passed": true
+    },
+    {
+      "name": "unavailable_read_is_error_without_invented_body",
+      "passed": true
+    },
+    {
+      "name": "deferred_document_becomes_visible",
+      "passed": true
+    },
+    {
+      "name": "schema_errors_count_toward_budget_no_auto_result",
+      "passed": true
+    },
+    {
+      "name": "finish_after_budget_rejected",
+      "passed": true
+    },
+    {
+      "name": "finish_schema_hold_missing_and_unseen_refs_rejected",
+      "passed": true
+    },
+    {
+      "name": "trace_integrity_failure_no_repair_or_write",
+      "passed": true
+    },
+    {
+      "name": "source_hash_change_fails_without_history_change",
+      "passed": true
+    },
+    {
+      "name": "output_restricted_to_runs",
+      "passed": true
+    },
+    {
+      "name": "latest_contains_only_observation_budget_status",
+      "passed": true
+    },
+    {
+      "name": "full_line_visibility_uses_union_without_gaps",
+      "passed": true
+    },
+    {
+      "name": "temporary_collision_refused_without_writes",
+      "passed": true
+    },
+    {
+      "name": "original_materials_unchanged",
+      "passed": true
+    }
+  ]
+}

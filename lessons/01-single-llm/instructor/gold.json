@@ -1,0 +1,1082 @@
+{
+  "dataset_id": "LAB1-AONAGI-202604-v1",
+  "note": "教材作成者が定めた期待結果。LLMの実測出力ではない。モデル入力への混入禁止。",
+  "gold": {
+    "A": [
+      {
+        "transaction_id": "PO-202604-001",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-001に対応するAPR-001の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  4,
+                  7
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "条件充足",
+            "reason": "税抜1,200,000円は1,000,000円以上に該当する。承認確定時点の承認者EMP-001は本部長で在任中のため、権限規程を満たす。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-P01",
+                "lines": [
+                  3,
+                  4,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  4,
+                  6,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  3,
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  5,
+                  9
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件充足",
+            "reason": "承認確定は2026-04-06 09:30:00 JST、発注確定は2026-04-06 10:00:00 JST。承認が発注より前である。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  8
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-06T09:30:00+09:00",
+              "ordered_at": "2026-04-06T10:00:00+09:00",
+              "operator": "<",
+              "result": true
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-001、版は1、税抜額は1,200,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  4,
+                  5
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "transaction_id": "PO-202604-002",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-002に対応するAPR-002の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  9,
+                  12
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "条件充足",
+            "reason": "税抜800,000円は1,000,000円未満に該当する。承認確定時点の承認者EMP-002は部長で在任中のため、権限規程を満たす。事後承認の問題はC3で別に評価する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-P01",
+                "lines": [
+                  3,
+                  4,
+                  5,
+                  7,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  9,
+                  11,
+                  13
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  4,
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  6,
+                  9
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件不充足",
+            "reason": "承認確定は2026-04-10 11:30:00 JST、発注確定は2026-04-10 11:00:00 JST。承認が発注の30分後であり、事前承認条件を満たさない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  13
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-10T11:30:00+09:00",
+              "ordered_at": "2026-04-10T11:00:00+09:00",
+              "operator": "<",
+              "result": false
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-002、版は1、税抜額は800,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  9,
+                  10
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "transaction_id": "PO-202604-003",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-003に対応するAPR-003の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  7
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  14,
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "条件不充足",
+            "reason": "税抜1,000,000円ちょうどは『1,000,000円以上』の区分で、本部長承認を要する。実際の承認者EMP-002は部長で、兼任・委任等もないため、権限条件を満たさない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-P01",
+                "lines": [
+                  3,
+                  4,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  14,
+                  16,
+                  18
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  4,
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  7,
+                  9
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件充足",
+            "reason": "承認確定は2026-04-14 16:00:00 JST、発注確定は2026-04-15 09:00:00 JST。承認が発注より前である。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  18
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-14T16:00:00+09:00",
+              "ordered_at": "2026-04-15T09:00:00+09:00",
+              "operator": "<",
+              "result": true
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-003、版は1、税抜額は1,000,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  14,
+                  15
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "B": [
+      {
+        "transaction_id": "PO-202604-001",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-001に対応するAPR-001の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  4,
+                  7
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "判定保留",
+            "reason": "承認者の役職と在任期間、対象発注の税抜額、委任等が適用されないことは確認できるが、金額と役職の承認権限を定める社内権限規程が入力にないため、権限の充足・不充足を確定できない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  4,
+                  6,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  3
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  5,
+                  9
+                ]
+              }
+            ],
+            "missing_evidence": [
+              "対象時点に有効な設備部の社内権限規程"
+            ],
+            "required_next_action": "規程版、有効期間、適用範囲、金額別の承認権限を含む社内規程の提示を求める。"
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件充足",
+            "reason": "承認確定は2026-04-06 09:30:00 JST、発注確定は2026-04-06 10:00:00 JST。承認が発注より前である。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  8
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-06T09:30:00+09:00",
+              "ordered_at": "2026-04-06T10:00:00+09:00",
+              "operator": "<",
+              "result": true
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-001、版は1、税抜額は1,200,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  4,
+                  5
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "transaction_id": "PO-202604-002",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-002に対応するAPR-002の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  9,
+                  12
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "判定保留",
+            "reason": "承認者の役職と在任期間、対象発注の税抜額、委任等が適用されないことは確認できるが、金額と役職の承認権限を定める社内権限規程が入力にないため、権限の充足・不充足を確定できない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  9,
+                  11,
+                  13
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  4
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  6,
+                  9
+                ]
+              }
+            ],
+            "missing_evidence": [
+              "対象時点に有効な設備部の社内権限規程"
+            ],
+            "required_next_action": "規程版、有効期間、適用範囲、金額別の承認権限を含む社内規程の提示を求める。"
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件不充足",
+            "reason": "承認確定は2026-04-10 11:30:00 JST、発注確定は2026-04-10 11:00:00 JST。承認が発注の30分後であり、事前承認条件を満たさない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  13
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-10T11:30:00+09:00",
+              "ordered_at": "2026-04-10T11:00:00+09:00",
+              "operator": "<",
+              "result": false
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-002、版は1、税抜額は800,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  9,
+                  10
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "transaction_id": "PO-202604-003",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-003に対応するAPR-003の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  7
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  14,
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "判定保留",
+            "reason": "承認者の役職と在任期間、対象発注の税抜額、委任等が適用されないことは確認できるが、金額と役職の承認権限を定める社内権限規程が入力にないため、権限の充足・不充足を確定できない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  14,
+                  16,
+                  18
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  4
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  7,
+                  9
+                ]
+              }
+            ],
+            "missing_evidence": [
+              "対象時点に有効な設備部の社内権限規程"
+            ],
+            "required_next_action": "規程版、有効期間、適用範囲、金額別の承認権限を含む社内規程の提示を求める。"
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件充足",
+            "reason": "承認確定は2026-04-14 16:00:00 JST、発注確定は2026-04-15 09:00:00 JST。承認が発注より前である。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  18
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-14T16:00:00+09:00",
+              "ordered_at": "2026-04-15T09:00:00+09:00",
+              "operator": "<",
+              "result": true
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-003、版は1、税抜額は1,000,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  14,
+                  15
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Bplus": [
+      {
+        "transaction_id": "PO-202604-001",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-001に対応するAPR-001の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  4,
+                  7
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "条件充足",
+            "reason": "税抜1,200,000円は1,000,000円以上に該当する。承認確定時点の承認者EMP-001は本部長で在任中のため、権限規程を満たす。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-P01",
+                "lines": [
+                  3,
+                  4,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  4,
+                  6,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  3,
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  5,
+                  9
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件充足",
+            "reason": "承認確定は2026-04-06 09:30:00 JST、発注確定は2026-04-06 10:00:00 JST。承認が発注より前である。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  8
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-06T09:30:00+09:00",
+              "ordered_at": "2026-04-06T10:00:00+09:00",
+              "operator": "<",
+              "result": true
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-001、版は1、税抜額は1,200,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O01",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  4,
+                  5
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "transaction_id": "PO-202604-002",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-002に対応するAPR-002の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  9,
+                  12
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "条件充足",
+            "reason": "税抜800,000円は1,000,000円未満に該当する。承認確定時点の承認者EMP-002は部長で在任中のため、権限規程を満たす。事後承認の問題はC3で別に評価する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-P01",
+                "lines": [
+                  3,
+                  4,
+                  5,
+                  7,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  9,
+                  11,
+                  13
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  4,
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  6,
+                  9
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件不充足",
+            "reason": "承認確定は2026-04-10 11:30:00 JST、発注確定は2026-04-10 11:00:00 JST。承認が発注の30分後であり、事前承認条件を満たさない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  13
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-10T11:30:00+09:00",
+              "ordered_at": "2026-04-10T11:00:00+09:00",
+              "operator": "<",
+              "result": false
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-002、版は1、税抜額は800,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O02",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  9,
+                  10
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "transaction_id": "PO-202604-003",
+        "conditions": [
+          {
+            "condition_id": "C1",
+            "status": "条件充足",
+            "reason": "PO-202604-003に対応するAPR-003の承認確定記録が存在し、取消・失効がない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  7
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  3,
+                  14,
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C2",
+            "status": "条件不充足",
+            "reason": "税抜1,000,000円ちょうどは『1,000,000円以上』の区分で、本部長承認を要する。実際の承認者EMP-002は部長で、兼任・委任等もないため、権限条件を満たさない。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-P01",
+                "lines": [
+                  3,
+                  4,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  14,
+                  16,
+                  18
+                ]
+              },
+              {
+                "evidence_id": "E-R01",
+                "lines": [
+                  4,
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-L01",
+                "lines": [
+                  7,
+                  9
+                ]
+              }
+            ]
+          },
+          {
+            "condition_id": "C3",
+            "status": "条件充足",
+            "reason": "承認確定は2026-04-14 16:00:00 JST、発注確定は2026-04-15 09:00:00 JST。承認が発注より前である。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  6
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  18
+                ]
+              }
+            ],
+            "comparison": {
+              "approved_at": "2026-04-14T16:00:00+09:00",
+              "ordered_at": "2026-04-15T09:00:00+09:00",
+              "operator": "<",
+              "result": true
+            }
+          },
+          {
+            "condition_id": "C4",
+            "status": "条件充足",
+            "reason": "発注書と承認記録の取引IDはPO-202604-003、版は1、税抜額は1,000,000円で一致する。",
+            "evidence_refs": [
+              {
+                "evidence_id": "E-O03",
+                "lines": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "evidence_id": "E-A01",
+                "lines": [
+                  14,
+                  15
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "expected_counts": {
+    "A": {
+      "条件充足": 10,
+      "条件不充足": 2,
+      "判定保留": 0,
+      "対象外": 0
+    },
+    "B": {
+      "条件充足": 8,
+      "条件不充足": 1,
+      "判定保留": 3,
+      "対象外": 0
+    },
+    "Bplus": {
+      "条件充足": 10,
+      "条件不充足": 2,
+      "判定保留": 0,
+      "対象外": 0
+    }
+  }
+}

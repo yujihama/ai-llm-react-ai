@@ -1,0 +1,62 @@
+{
+  "source_lesson": "02-basic-rag",
+  "unchanged_files": [
+    {
+      "path": "learner/base/case_C.txt",
+      "sha256": "7302ee19739c68c2cda1e60d2f11112752ed6156d613a16a076c7500372d0517"
+    },
+    {
+      "path": "learner/controls/C_full.txt",
+      "sha256": "c91cd453893809aad4166064caff7c5604f9408c71d79a59275913a51e9c1428"
+    },
+    {
+      "path": "learner/corpus/C/D-HR01.txt",
+      "sha256": "57b49251ebe86aa602aa75695779c5a3983f3730f4deda2820f4279667eeac57"
+    },
+    {
+      "path": "learner/corpus/C/D-IT01.txt",
+      "sha256": "7b837a0997d5f2a3e430087c1c7acd28a8ffd7991bddebf46af92055b74040b8"
+    },
+    {
+      "path": "learner/corpus/C/D-TR01.txt",
+      "sha256": "6c8b4448bfeaca1341f53bba6f619618bb93805216a3c86df59ec1930a25382b"
+    },
+    {
+      "path": "learner/corpus/C/E-P02.txt",
+      "sha256": "bd4ed6f3c8165149d34e1821df5e7a419c9afce87220e1e60e339b901a795597"
+    },
+    {
+      "path": "learner/evidence/C/E-A04.txt",
+      "sha256": "b96d090df0feeb3f965124c77e4083b41668c6c3fc12f5b04f1d639357fbe329"
+    },
+    {
+      "path": "learner/evidence/C/E-B04.txt",
+      "sha256": "a3c9b0b08baaa7612a7a729e364784e850f1915ff9f2bb203c59b9712c3d45ca"
+    },
+    {
+      "path": "learner/evidence/C/E-D04.txt",
+      "sha256": "4db6af888dcd1a06896469121ff4d9b7de71a92cf8764e96ff2d9d4449fc9eb8"
+    },
+    {
+      "path": "learner/evidence/C/E-L04.txt",
+      "sha256": "4b496cef9d0d414462831cf55bb62c4561bf0adc7ff6cabb3e7bdb307ae410ab"
+    },
+    {
+      "path": "learner/evidence/C/E-O04.txt",
+      "sha256": "ccdfa2123cb982983674202b597940dfaaf9aa5e9a78651681aa8eec053e6b6c"
+    },
+    {
+      "path": "learner/evidence/C/E-R01.txt",
+      "sha256": "0101d4cf7c109d9b18e67f113145e609cddbb14c18925738ec8f184d9b253e38"
+    },
+    {
+      "path": "learner/procedures/P01_C.txt",
+      "sha256": "1f709b3ae4a624ca30f2b1dc2d853a43ae96293c763d9d39ab60fa8d67ad78f8"
+    },
+    {
+      "path": "learner/search_method.txt",
+      "sha256": "b09a3529e6141bbd9945e8c7b9c928effdb9aa278d8bdf6fd5f7a0dd310e16bb"
+    }
+  ],
+  "comparison_note": "本編でも実習2運用版2.0の固定入力をそのまま使う。変更対象は取得と文脈構築。"
+}

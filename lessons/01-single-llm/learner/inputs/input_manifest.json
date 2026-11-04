@@ -1,0 +1,17 @@
+{
+  "dataset_id": "LAB1-AONAGI-202604-v1",
+  "inputs": {
+    "case_A.txt": {
+      "sha256": "eddeececa329083d96cb67ab074448ffcad7f6bf1573f729ac76a49ce5f5c049",
+      "bytes": 9500
+    },
+    "case_B.txt": {
+      "sha256": "3c5bd88e9e616848e5073d830b61baeb7faab0297f3e259373d9215dd6f2f7b3",
+      "bytes": 8788
+    },
+    "case_B_plus.txt": {
+      "sha256": "eddeececa329083d96cb67ab074448ffcad7f6bf1573f729ac76a49ce5f5c049",
+      "bytes": 9500
+    }
+  }
+}

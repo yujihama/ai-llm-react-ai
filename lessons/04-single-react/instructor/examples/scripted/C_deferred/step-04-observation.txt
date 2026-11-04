@@ -1,0 +1,41 @@
+{
+  "observation": {
+    "results": [
+      {
+        "complete_lines_in_this_excerpt": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "complete_lines_observed_so_far": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "document": "E-B04.txt",
+        "end_offset": 354,
+        "section": "full_document",
+        "sha256": "a3c9b0b08baaa7612a7a729e364784e850f1915ff9f2bb203c59b9712c3d45ca",
+        "source": "evidence/E-B04.txt",
+        "start_offset": 0,
+        "text": "E-B04 設備更新予算明細 EQ-2026-04-02\n文書版 B04-1\nL01 青凪機器株式会社　設備更新予算明細\nL02 予算ID：EQ-2026-04-02\nL03 対象部門：設備部\nL04 予算区分：設備更新\nL05 予算承認確定日時：2026-04-13 14:00:00 JST\nL06 承認者：EMP-001 高瀬真琴｜状態：承認済み\nL07 明細番号：03｜対象取引ID：PO-202604-004｜品目：冷却循環ポンプ更新装置｜税抜明細額：1,500,000円\nL08 対象発注の税抜全額を本明細に対応付ける。これは当該明細の確定額であり、計画全体の予算残額を示す値ではない。\nL09 2026年4月30日18:00:00 JSTまで、本明細の取消・金額変更・品目変更・部門変更なし。\n"
+      }
+    ],
+    "status": "ok",
+    "type": "read"
+  },
+  "remaining_steps": 6,
+  "session_status": "active"
+}

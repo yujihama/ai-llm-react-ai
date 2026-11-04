@@ -1,0 +1,39 @@
+{
+  "kind": "actual_model_selected_run",
+  "source_run": "runs/model_deferred",
+  "scenario": "C_deferred",
+  "description": "新規コンテキストで開始した単一LLMエージェントが、実際の観測を受けて次の行動JSONを選んだ1回の実行。固定脚本ではない。",
+  "initial_actor_prompt_label": "trial_a",
+  "initial_prompt_label_note": "初期入力は可用性を示さない中立名trial_aで提示した。収録ファイル名はinitial_prompt.txt。",
+  "operator_record": {
+    "context": "他の試行から独立した新規コンテキスト。同じ試行内では会話を継続。",
+    "actor_wrapper": "アクセス可能な資料を提示入力と観測に限定し、行動JSONを1個だけ返すよう指定するラッパー。次の行動や判定の正解は与えない。",
+    "relay": "実行担当者がモデルの行動JSONを修正せずローカルランタイムへ中継した。",
+    "teacher_materials_access": false,
+    "gold_answer_access": false,
+    "observation_transfer": "最初の観測はJSONの空白を詰めて貼付。以後の継続に使う観測はUTF-8ファイルを評価を行うLLMだけに読取許可し、そのまま渡した。",
+    "basis": "実行担当者の中継記録による。元の行動ファイルと保存済みtraceの内容一致は本整理処理でも検証。"
+  },
+  "model_metadata": {
+    "exact_model_version": null,
+    "temperature": null,
+    "latency": null,
+    "token_usage": null,
+    "pricing": null,
+    "note": "モデル選択例の上記情報は記録されていない。脚本例ではモデルを使用していない。"
+  },
+  "runtime_external_api_calls": false,
+  "code_sha256": {
+    "react_lab.py": "403755c0afaf9e08eb94a760ad4bfc326b315d48b6d8cf4eadf18bca8ce7adbf",
+    "basic_retrieve.py": "7bc7bad06cd437210659181ef2a640b4081e789c6668fff20a00dcc0309fdd19",
+    "replay_examples.py": "9dd369c33f746838fda077def0ee63d91452f85048719df444c24c79b82453f5"
+  },
+  "runtime_test_summary": {
+    "passed": true,
+    "test_groups": 31,
+    "subprocess_calls": 38,
+    "details": "../../runtime_verification.json"
+  },
+  "preservation": "行動JSON、trace.jsonl、最終prompt、最新観測は元ファイルのバイトを保持。initial_promptと各step観測は同じ凍結runtimeと履歴から再構成。state.jsonや未観測資料の内部一覧は収録しない。",
+  "limitations": "各モデル条件は1回だけ。比較対象間の設定を管理した性能評価、成功率、一般化可能性、料金・速度の評価を示さない。提出判定の正誤はruntimeでは採点しない。"
+}

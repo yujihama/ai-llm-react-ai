@@ -1,0 +1,7 @@
+{
+  "type": "search",
+  "collection": "evidence",
+  "query": "EQ-2026-04-02 明細03 予算承認",
+  "top_k": 1,
+  "purpose": "委任例外で要求された予算の事前承認と明細を確認する"
+}

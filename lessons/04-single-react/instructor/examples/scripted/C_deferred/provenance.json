@@ -1,0 +1,35 @@
+{
+  "kind": "hand_authored_scripted_replay",
+  "source_run": "runs/verified_C_deferred",
+  "scenario": "C_deferred",
+  "description": "講師が事前記述した行動JSONをreplay_examples.pyで再生したもの。LLMによる選択・回答の実測ではない。",
+  "initial_actor_prompt_label": null,
+  "initial_prompt_label_note": "LLMへの初期入力提示は行っていない。",
+  "operator_record": {
+    "action_source": "instructor/example_actions/C_deferred.json",
+    "action_source_sha256": "2035d21e547f55700dc857c4dbfab211833da5fa77a4f4297b9090d91995673c",
+    "llm_invoked": false
+  },
+  "model_metadata": {
+    "exact_model_version": null,
+    "temperature": null,
+    "latency": null,
+    "token_usage": null,
+    "pricing": null,
+    "note": "モデル選択例の上記情報は記録されていない。脚本例ではモデルを使用していない。"
+  },
+  "runtime_external_api_calls": false,
+  "code_sha256": {
+    "react_lab.py": "403755c0afaf9e08eb94a760ad4bfc326b315d48b6d8cf4eadf18bca8ce7adbf",
+    "basic_retrieve.py": "7bc7bad06cd437210659181ef2a640b4081e789c6668fff20a00dcc0309fdd19",
+    "replay_examples.py": "9dd369c33f746838fda077def0ee63d91452f85048719df444c24c79b82453f5"
+  },
+  "runtime_test_summary": {
+    "passed": true,
+    "test_groups": 31,
+    "subprocess_calls": 38,
+    "details": "../../runtime_verification.json"
+  },
+  "preservation": "行動JSON、trace.jsonl、最終prompt、最新観測は元ファイルのバイトを保持。initial_promptと各step観測は同じ凍結runtimeと履歴から再構成。state.jsonや未観測資料の内部一覧は収録しない。",
+  "limitations": "各モデル条件は1回だけ。比較対象間の設定を管理した性能評価、成功率、一般化可能性、料金・速度の評価を示さない。提出判定の正誤はruntimeでは採点しない。"
+}

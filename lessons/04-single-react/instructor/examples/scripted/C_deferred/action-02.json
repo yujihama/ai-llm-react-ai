@@ -1,0 +1,10 @@
+{
+  "type": "read",
+  "collection": "policy",
+  "document": "E-P02.txt",
+  "sections": [
+    4,
+    5
+  ],
+  "purpose": "第1条の参照先にある適用条件と委任例外を確認する"
+}
